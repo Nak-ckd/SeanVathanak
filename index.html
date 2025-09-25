@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Graphic Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Jersey+15&family=Koulen&family=Playwrite+NL+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: "Koulen", cursive;
+            font-style: normal;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .page-section {
+            display: none;
+            min-height: calc(100vh - 8rem);
+        }
+        .page-section.active {
+            display: block;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-gray-800 tracking-wide mb-4 md:mb-0">SEAN VATHANAK</a>
+            <div class="space-x-4">
+                <a href="#welcome" data-page="welcome" class="nav-link text-gray-600 hover:text-gray-900 transition-colors duration-300">Home</a>
+                <a href="#portfolio" data-page="portfolio" class="nav-link text-gray-600 hover:text-gray-900 transition-colors duration-300">Portfolio</a>
+                <a href="#about" data-page="about" class="nav-link text-gray-600 hover:text-gray-900 transition-colors duration-300">About Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Welcome / Index Section -->
+        <section id="welcome" class="page-section active flex items-center justify-center text-center">
+            <div class="py-24 px-8 max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Creative <span class="text-blue-600">Design</span> for a Better World
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-8">
+                    Crafting compelling visual stories through posters, branding, and unique logos. Let's build something beautiful together.
+                </p>
+                <a href="#portfolio" data-page="portfolio" class="cta-button nav-link inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
+                    View My Work
+                </a>
+            </div>
+        </section>
+
+        <!-- Portfolio / Home Page Section -->
+        <section id="portfolio" class="page-section py-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">My Portfolio</h2>
+            
+            <!-- Posters Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-2">POSTERS</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Example Poster Item 1 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./angkorwat.1.jpg" alt="Event Poster" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">"32th of Angkorwat" Event Poster</h4>
+                        <p class="text-gray-600 text-sm">ថ្ងៃទី​ ១៤ ខែឆ្នូ ឆ្នាំ ២០២៤ គឺជាថ្ងៃគម្រួបខួបទី៣២នៃការដាក់បញ្ចូលប្រាសាទអង្គរវត្តជាសម្បត្តិបេតិកភណ្ឌជាតិរូបិយ</p>
+                    </div>
+                    <!-- Example Poster Item 2 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./rach t'rab.jpg" alt="Exhibition Poster" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">"Art & Culture" របាំព្រះរាជទ្រព្យ</h4>
+                        <p class="text-gray-600 text-sm">របាំ​ព្រះ​រាជ​ទ្រព្យ​ គឺជារបាំក្បាច់បុរាណរបស់កម្ពុជា ដែលមានដើមកំណើតនៃការសម្តែងក្នុងអំឡុងស.វទី៣ នៃគ.សករាជ ដែលប្រហែលជាកើតមានវត្តមានដំណាលគ្នានៃក្រុម ភ្លេងពិណពាទ្យ ក្នុងសម័យកាល អាណាចក្រនគរភ្នំ ។</p>
+                    </div>
+                    <!-- Example Poster Item 3 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./riya poster 2.jpg" alt="Corporate Poster" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">Poster អំពីផលិតផល</h4>
+                        <p class="text-gray-600 text-sm">ការប្រមូតផលិតតាមរយះ poster នៅតែអាចធ្វើឡើងទៅបាន ដួចជា poster លក់បញ្ចុះតម្លៃមួយចំនួន</p>
+                    </div>
+
+                    <div class="card p-6 rounded-lg">
+                        <img src="./សារលិខិតជូនពរ.jpg" alt="Corporate Poster" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">លិខិតជូនពរ</h4>
+                        <p class="text-gray-600 text-sm">សារលិខិតជូនពរ សម្រាប់ជូននយោជិក ឬថ្នាក់ដឹកនាំ នាពិធីបុណ្យផ្សេងៗ</p>
+                    </div>
+
+                    <div class="card p-6 rounded-lg">
+                        <img src="./kla.png" alt="Corporate Poster" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">International Events</h4>
+                        <p class="text-gray-600 text-sm">សារលិខិតជូនពរ សម្រាប់ពិធីបុណ្យជាអន្ដរជាតិដើម្បីទាក់ទាញអ្នកទស្សនា (viewer)</p>
+                    </div>
+
+                    <div class="card p-6 rounded-lg">
+                        <img src="./pjum ben.jpg" alt="Corporate Poster" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">បុណ្យជាតិ</h4>
+                        <p class="text-gray-600 text-sm">Poster អំពីពិធីបុណ្យជាតិ សម្រាប់ជាតិ សម្រាប់ប្រជាជន</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branding Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-2">BRANDING</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Example Branding Item 1 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./Final sample.jpg" alt="Coffee Shop Branding" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">"Brew & Bean" Coffee Shop</h4>
+                        <p class="text-gray-600 text-sm">ការបង្កើត Branding ខ្លួនឯងតម្រូវអោយមានអ្វីជាខ្លួនឯងដូចជា logo/profile ជាំដើម</p>
+                    </div>
+                    <!-- Example Branding Item 2 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./sample-01.jpg   " alt="Tech Startup Branding" class="rounded-lg mb-4 w-full h-auto">
+                        <h4 class="text-xl font-semibold mb-2">ការបង្កើត</h4>
+                        <p class="text-gray-600 text-sm">បង្កើតអោយមានស្លាកយីហោលើកែវការហ្វ ឬនៅលើហាងដើម្បីបង្កើតភាពងាយស្រួលដល់អតិថិជន</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logos Section -->
+            <div>
+                <h3 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-2">LOGOS</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Example Logo Item 1 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./LeKafe-01.jpg" alt="Logo A" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
+                        <h4 class="text-xl font-semibold mb-2">Logo: "Lé Kafé"</h4>
+                        <p class="text-gray-600 text-sm"></p>
+                    </div>
+                    <!-- Example Logo Item 2 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./ss 3-1 - Copy-01.jpg" alt="Logo B" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
+                        <h4 class="text-xl font-semibold mb-2">Logo: "SUPER SELL"</h4>
+                        <p class="text-gray-600 text-sm"></p>
+                    </div>
+                    <!-- Example Logo Item 3 -->
+                    <div class="card p-6 rounded-lg">
+                        <img src="./photo_2024-12-02_17-01-22.jpg" alt="Logo C" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
+                        <h4 class="text-xl font-semibold mb-2">Logo: "BB COFFEE"</h4>
+                        <p class="text-gray-600 text-sm">Best Bean Coffee</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="page-section py-12">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-8">About Me</h2>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">My Background</h3>
+                    <p class="text-gray-600 mb-4">
+                        I am a passionate and dedicated graphic designer with a strong foundation in visual communication and a keen eye for detail. My goal is to create impactful and aesthetically pleasing designs that solve complex problems and connect with audiences. I specialize in brand identity, print design, and digital art.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Education & Courses</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Technical and Vocational Certificate of Business/ICT, National Technical Training Institute</li>
+                        <li>Finish as a Sophomore student of Information Technology, Royal University Of Phnom Penh</li> 
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Experience</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>**Branding**
+                            <br>Control any branding for Coffee shop
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Sean Vathanak. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle page navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+
+            // Function to show a specific page and hide others
+            const showPage = (pageId) => {
+                pageSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(pageId).classList.add('active');
+            };
+
+            // Event listener for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const page = event.target.getAttribute('data-page');
+                    if (page) {
+                        showPage(page);
+                    }
+                });
+            });
+
+            // Handle URL hash changes for back/forward button support
+            window.addEventListener('hashchange', () => {
+                const page = window.location.hash.substring(1);
+                if (page) {
+                    showPage(page);
+                }
+            });
+
+            // Show the initial page based on the URL hash or default to welcome
+            const initialPage = window.location.hash.substring(1) || 'welcome';
+            showPage(initialPage);
+        });
+    </script>
+</body>
+</html>
